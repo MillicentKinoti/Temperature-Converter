@@ -13,8 +13,8 @@ window.resizable(width=False, height=False)
 # Create the Fahrenheit entry frame with an Entry
 # widget and label in it
 form_entry = tk.Frame(master=window)
-entry_temperature = tk.Entry(master=form_entry, width=10)
-label_temp = tk.Label(master=form_entry, text="\N{DEGREE FAHRENHEIT}")
+entry_temperature = tk.Entry(master=form_entry, width=10, bg="lightblue", fg="black" )
+label_temp = tk.Label(master=form_entry, text="\N{DEGREE FAHRENHEIT}", bg = "black", fg = "white")
 
 # Layout the temperature Entry and Label in frm_entry
 # using the .grid() geometry manager
@@ -31,8 +31,8 @@ label_result = tk.Label(master=window, text="\N{DEGREE CELSIUS}")
 
 # Set-up the layout using the .grid() geometry manager
 form_entry.grid(row=0, column=0, padx=10)
-button_convert.grid(row=0, column=1, pady=10)
-label_result.grid(row=0, column=2, padx=10)
+button_convert.grid(row=0, column=1, pady=20)
+label_result.grid(row=0, column=2, padx=20)
 
 # Run the application
 window.mainloop()
