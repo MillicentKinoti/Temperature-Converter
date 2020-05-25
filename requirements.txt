@@ -1,0 +1,4 @@
+tkinter
+
+Installing tkinter on Linux
+sudo apt-get install python3-tk
